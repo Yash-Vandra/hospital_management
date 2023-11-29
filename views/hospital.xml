@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-     <record id="hospital_form" model="ir.ui.view">
+    <record id="hospital_form" model="ir.ui.view">
         <field name="name">hospital.form.form</field>
         <field name="model">hospital.management</field>
         <field name="arch" type="xml">
@@ -43,5 +43,20 @@
               parent="hospital_first_menu"
               action="hospital_actions"
               sequence="10"/>
+
+
+    <record id='hospital_department_actions' model='ir.actions.act_window'>
+        <field name="name">Department</field>
+        <field name="res_model">department.department</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">tree,form,kanban</field>
+    </record>
+
+    <menuitem id="hospital_third_menu"
+              name="Department"
+              parent="hospital_first_menu"
+              action="hospital_department_actions"
+              sequence="5"/>
+
 </odoo>
 

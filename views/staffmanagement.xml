@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hospital_staff_management_form" model="ir.ui.view">
+        <field name="name">hospital.staff.management.form</field>
+        <field name="model">staff.staff</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="fullname"/>
+                        <field name="id_number"/>
+                        <field name="staff_department"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="hospital_staff_management_tree" model="ir.ui.view">
+        <field name="name">hospital.staff.management.tree</field>
+        <field name="model">staff.staff</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="fullname"/>
+                <field name="id_number"/>
+                <field name="staff_department"/>
+            </tree>
+        </field>
+    </record>
+
+<!--    <record id='hospital_staff_manage_actions' model='ir.actions.act_window'>-->
+<!--        <field name="name">Staff Management</field>-->
+<!--        <field name="res_model">staff.staff</field>-->
+<!--        <field name="type">ir.actions.act_window</field>-->
+<!--        <field name="view_mode">tree,form,kanban</field>-->
+<!--    </record>-->
+
+
+</odoo>

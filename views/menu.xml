@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-        <menuitem id="hospital_root_menu"
-            name="Hospital"
-            sequence="10"
-            />
-        <menuitem id="hospital_first_menu"
-            name="Operations"
-            parent="hospital_root_menu"
-            sequence="10"
-            />
-
+    <menuitem id="hospital_root_menu"
+              name="Hospital"
+              sequence="10"
+    />
+    <menuitem id="hospital_first_menu"
+              name="Operations"
+              parent="hospital_root_menu"
+              sequence="10"
+    />
+    <menuitem id="hospital_staff_menu"
+              name="Staff Management"
+              parent="hospital_root_menu"
+              sequence="15"
+    />
+<!--    <menuitem id="hospital_staff_records"-->
+<!--              name="Staff Records"-->
+<!--              parent="hospital_staff_menu"-->
+<!--              action="hospital_staff_manage_actions"-->
+<!--              sequence="15"-->
+<!--    />-->
 </odoo>

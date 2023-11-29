@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hospital_department_form" model="ir.ui.view">
+        <field name="name">hospital.department.form</field>
+        <field name="model">department.department</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="firstname"/>
+                        <field name="lastname"/>
+                        <field name="consulted_doctor"/>
+                        <field name="department"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="hospital_department_tree" model="ir.ui.view">
+        <field name="name">hospital.department.tree</field>
+        <field name="model">department.department</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="firstname"/>
+                <field name="lastname"/>
+                <field name="consulted_doctor"/>
+                <field name="department"/>
+            </tree>
+        </field>
+    </record>
+</odoo>
+
